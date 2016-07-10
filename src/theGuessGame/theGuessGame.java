@@ -9,6 +9,8 @@ public class theGuessGame {
 				
 				// play again string
 				String playAgain = "";
+				// create a random number from 1-100
+				int theNumber = (int)(Math.random()*100 + 1);
 	}
 
 }
