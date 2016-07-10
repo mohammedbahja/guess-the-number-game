@@ -9,6 +9,9 @@ public class theGuessGame {
 				
 				// play again string
 				String playAgain = "";
+				
+				// game loop
+				do {
 				// create a random number from 1-100
 				int theNumber = (int)(Math.random()*100 + 1);
 				while ( guess != theNumber ) {
@@ -28,6 +31,15 @@ public class theGuessGame {
 						System.out.println(guess + " is correct! You win!" );
 					
 				}	// end of while loop for guessing
+				// ask for 'y' to play again
+				System.out.println("Would you like to play again (y/n)?");
+				playAgain = scan.next();
+			
+			} while(playAgain.equalsIgnoreCase("y"));
+			
+			// thank the user for playing
+			System.out.println("Thank you for playing! Goodbye.");
+			
 				
 	}
 
